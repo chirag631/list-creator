@@ -69,7 +69,7 @@ include('includes/navbar.php');
                 <input type="date" name="edit_dob" value="<?php  echo $row['dob']  ?>" class="form-control" placeholder="Enter DOB">
             </div>
            
-      <a href="register.php" class="btn btn-danger">CANCEL</a>
+      <a href="register_admin.php" class="btn btn-danger">CANCEL</a>
       <button type="submit" name="updatebtn" class="btn btn-primary">UPDATE</button>
     
           </form>
