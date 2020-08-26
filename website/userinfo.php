@@ -1,0 +1,25 @@
+<?php
+
+$conn= mysqli_connect('localhost','root','','nature');
+if($conn)
+{
+    echo "connection succesfull";
+}
+else {
+    echo "no connection";
+}
+
+
+    $user = $_POST['user'];
+    $email= $_POST['email'];
+    $mobole= $_POST['mobile'];
+    $comments= $_POST['comments'];
+    
+    $query = " INSERT INTO userinfodata (user,email,mobile,comments)
+    VALUES('$user','$email','$mobole','$comments')";
+    
+    mysqli_query($conn,$query);
+    
+    header('location:index.php');
+    
+?>
